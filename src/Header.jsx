@@ -5,14 +5,16 @@ import MainMenu from './Menu'
 
 const headerStyle = makeStyles({
     header: {
-        background: '#1d1d1d'
-    }
+        background: '#1d1d1d',
+        alignItems: 'center'
+    
+    },
 }) 
 
 function Header (){
     const style = headerStyle();
     return (<AppBar position="relative" className={style.header}>
-    <Toolbar >
+    <Toolbar>
         <MainMenu />
     </Toolbar>
 </AppBar>)}

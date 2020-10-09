@@ -20,4 +20,3 @@ function AppContainer(){
 
 export default AppContainer;
 
-{/* */}
