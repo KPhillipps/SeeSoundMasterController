@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Typography, makeStyles}  from '@material-ui/core';
-
+import AppCard from './Card';
 
 const style = makeStyles({
   typography: {
@@ -24,6 +24,7 @@ function AppContainer(){
     return (
         <Container maxWidth="bg"  className={containerStyle.container}>
           <Typography component="div" className={containerStyle.typography}/>
+          <AppCard/>
         </Container>
 
     )
