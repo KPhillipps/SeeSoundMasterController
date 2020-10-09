@@ -15,7 +15,7 @@ const buttonStyle = makeStyles({
 const StyledMenu = withStyles({
         paper: {
         border: '2px solid #7C0303',
-        background: 'linear-gradient(45deg,#141E30  35%, #243B55 95%)',
+        background: '#1d1d1d',
         color: '#FFF'
         },
     })((props)=>(

@@ -5,7 +5,7 @@ import MainMenu from './Menu'
 
 const headerStyle = makeStyles({
     header: {
-        background: 'linear-gradient(45deg,#141E30  35%, #243B55 95%)'
+        background: '#1d1d1d'
     }
 }) 
 
