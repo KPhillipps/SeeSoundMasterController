@@ -1,5 +1,7 @@
 import React from 'react';
-import {Card, makeStyles} from '@material-ui/core';
+import {Card, makeStyles, CardContent, Typography, CardActionArea} from '@material-ui/core';
+import Image from '@material-ui/icons/Image';
+
 
 const styles = makeStyles({
     card: {
@@ -15,10 +17,22 @@ function AppCard(){
 
     const cardStyle = styles()
 
+    const [anchorEl, setAnchorEl] = React.useState(null)
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+  
+      };
+    const handleClose = () =>{
+        setAnchorEl(null);
+    }
+
     return (<Card className={cardStyle.card}>
-
+        <CardContent onClick={handleClick}>
+            <Typography variant="h3">Upload</Typography>
+            <Typography variant="body1">Select the images to be uploaded</Typography>
+            <CardActionArea><Image fontSize="large"  anchorEl={anchorEl} open={Boolean(anchorEl)}/></CardActionArea>
+        </CardContent>
     </Card>)
-
 }
 
 export default AppCard;
