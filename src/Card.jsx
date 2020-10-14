@@ -13,6 +13,9 @@ const styles = makeStyles({
     }, input: {
         display: 'none',
         fontSize: 'large'
+    },
+    image: {
+        color: '#7C0303'
     }
 })
 
@@ -33,7 +36,7 @@ function AppCard(){
             <CardActionArea>
                 <input className={cardStyle.input} id="icon-button-file" type="file" onChange={onFileChange}/>
                 <label htmlFor="icon-button-file">
-                    <Image color="primary" fontSize='large'/>
+                    <Image className={cardStyle.image} fontSize='large'/>
                 </label>
             </CardActionArea>
         </CardContent>
